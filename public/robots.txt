@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saldm04.github.io/sitemap.xml

@@ -1,10 +1,67 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>saldm04.github.io</title>
+    <meta
+      name="description"
+      content="Portfolio di Salvatore Di Martino, studente magistrale in Informatica all’Università degli Studi di Salerno, interessato a Software Engineering, GIS e Data."
+    />
+    <link rel="canonical" href="https://saldm04.github.io/" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:url" content="https://saldm04.github.io/" />
+    <meta property="og:title" content="Salvatore Di Martino | Computer Science MSc Student" />
+    <meta
+      property="og:description"
+      content="Portfolio di Salvatore Di Martino: Software Engineering, GIS, Data e attività sul territorio."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Salvatore Di Martino | Computer Science MSc Student" />
+    <meta
+      name="twitter:description"
+      content="Portfolio di Salvatore Di Martino: Software Engineering, GIS, Data e attività sul territorio."
+    />
+    <meta name="theme-color" content="#f7f8f5" />
+    <title>Salvatore Di Martino | Computer Science MSc Student</title>
+    <script>
+      (() => {
+        let theme = 'light'
+        try {
+          theme = localStorage.getItem('salvatore-portfolio-theme') === 'dark' ? 'dark' : 'light'
+        } catch {
+          // Light remains the safe default when storage is unavailable.
+        }
+        document.documentElement.dataset.theme = theme
+        document.documentElement.classList.toggle('dark', theme === 'dark')
+      })()
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Salvatore Di Martino",
+        "url": "https://saldm04.github.io/",
+        "email": "mailto:tatodimartino@gmail.com",
+        "jobTitle": "Studente magistrale in Informatica",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Università degli Studi di Salerno"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Maiori",
+          "addressRegion": "SA",
+          "addressCountry": "IT"
+        },
+        "sameAs": [
+          "https://github.com/saldm04",
+          "https://www.linkedin.com/in/saldm"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
